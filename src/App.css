@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .heading {
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 2px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .underline {
+    border-bottom: 5px solid #49a6e9;
+    width: 100px;
+    margin: auto;
+    padding: 3px;
+  } 
+  
+  .btns {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 330px;
+    padding: 30px;
   }
+  
+  .buttons {
+    padding: 5px;
+    border: none;
+    background: none;
+    font-size: 17px;
+    color: #49a6e9;
+    outline: none;
+    transition: all 0.5s linear;
+    cursor: pointer;
+  }
+  
+  .buttons:hover {
+    color: #fff;
+    background: #49a6e9;
+    border-radius: 5px;
+  }
+  
+  img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #49a6e9;
+  }
+
+.menu-content {
+    width: 95vw;
+    display: grid;
+    margin: 0 auto;
+    max-width: 1170px;
+    column-gap: 10px;
+    grid-template-columns: auto  auto
+  }
+
+.contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.infos {
+    width: 60%;
+}
+
+.title-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-price span {
+    color: #49a6e9;
+}
+
+.dotted-line {
+    border-bottom: 1px dotted #49a6e9;
+}
+
+.infos p {
+    padding: 10px 0;
+    color: #617d98;
+}
+
+@media screen and (max-width: 992px) {
+    .menu-content{
+        grid-template-columns: auto;
+    }
+
+    .contents{
+        display: grid;
+        gap: 15px;
+    }
+
+    img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .infos {
+        width: 100%;
+    }
 }
